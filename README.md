@@ -20,55 +20,31 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 ## Procedure
 ## Program:
 ## PROGRAM 1:
+/* Program to design to implementation of combinational logic and verify its truth table in quartus using verilog programming.
 
-```
-module SUB(a,b,c,d,f);
-input a,b,c,d;
-output f;
-wire f1,f2,f3;
-assign f1 = (~c&~b&~a);
-assign f2 = (~d&~c&~a);
-assign f3 = (c&~(~b)&~a);
-assign f= f1&~f2&~f3;
-endmodule
-```
+Developed by: RAHINI.A
+Register Number: 23012479
+
+
+
+![EXP  02](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/b36231e4-c9b0-4905-ba82-173f75efdbc2)
+
+## TRUTH TABLE:
+
+
+![Exp2 truthtable](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/9923d6f9-7224-4d7f-adb9-52d275d234f6)
+
 
 ## RTL VIEW:
 
-![image](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/3a877492-65b4-4c4a-86f1-405f2b2ea92d)
+![F1 RTL](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/b2b8f31f-73a2-49a2-9797-ab8a7e19ba3a)
 
-## TRUTH TABLE:
+![F2 RTL](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/9472733e-451b-4a86-8755-0d1479cc29cb)
 
-![image](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/aa77ae8d-8476-4292-9782-d4324ba58f5c)
+## Timing Diagram:
 
-## OUTPUT:
+![wave exp 02](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/e3dc2af3-bfa0-48d9-afa3-e4e977b92a36)
 
-![image](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/97056d09-f9aa-4e4f-8ddc-c02841c4899c)
-
-
-## PROGRAM 2:
-```
-module ADD(a,b,c,d,f);
-input a,b,c,d;
-output f;
-wire f1,f2,f3,f4;
-assign f1 = c&(~b)&a;
-assign f2 = d&(~c)&a;
-assign f3 = c&(~b)&a;
-assign f4 = ~(f1|f2|f3);
-not(f,f4);
-endmodule
-```
-## RTL:
-![image](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/60764413-6200-4393-a59c-79862d088e96)
-
-
-## TRUTH TABLE:
-![image](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/5b70ae52-3cf6-4d9f-8268-4054c141002d)
-
-## OUTPUT:
-
-![image](https://github.com/RahiniAchudhan/Experiment--02-Implementation-of-combinational-logic-/assets/145742838/24fe3757-52ba-4a65-be51-e5001e2ec383)
 
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
